@@ -1,9 +1,9 @@
-import CustomTabs from '../components/pills';
-import Header from '../components/header';
+import CustomTabs from '../components/ExperienceTabs';
+import Header from '../components/TitleHeader';
 export default function Experience() {
     return (
         <>
-            <div style={{marginLeft: "10%", marginRight: "10%"}}>
+            <div className="experience-container">
                 <Header title="Experience" />
                 <CustomTabs />
             </div>

@@ -1,30 +1,20 @@
 import '../App.css';
-import snake from "../assets/game_snake.jpeg";
-import car from "../assets/car.jpg";
-import hangman from "../assets/hangman.jpg";
-import drink from "../assets/drink2.png";
-import Card from '../components/card';
-import Header from '../components/header';
+import snake from "../assets/game_snake_logo.jpeg";
+import car from "../assets/car_game_logo.jpg";
+import hangman from "../assets/hangman_logo.jpg";
+import drink from "../assets/truth_or_drink_logo.png";
+import Card from '../components/ProjectCard';
+import Header from '../components/TitleHeader';
 export default function Projects() {
     return (
         <>
-            <div style={{  marginLeft: "10%", marginRight: "10%", marginBottom: "10%" }}>
+            <div className="projects-container">
                 <Header title="Projects" />
-                <div
-                    style={{
-                    width: "100%",
-                    marginTop: "3%",
-                    display: "grid",
-                    gridTemplateColumns: "repeat(3, 1fr)", 
-                    justifyContent: "center",
-                    gap: "40px"
-                    }}
-                >
+                <div className="projects-grid">
                     <Card image={drink} title="Truth or Drink" text="Built with Javascript" link="https://github.com/Marielaquintanarr/TruthOrDrink" />
                     <Card image={snake} title="Snake Game" text="Built with Python" link="kmckmdlcm" />
                     <Card image={car} title="Race Game" text="Built with Python" link="kmckmdlcm" />
                     <Card image={hangman} title="Hangman" text="Built with Python" link="https://github.com/Marielaquintanarr/TruthOrDrink" />
-
                 </div>
             </div>
         </>

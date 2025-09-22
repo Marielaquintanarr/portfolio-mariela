@@ -1,54 +1,51 @@
 import '../App.css';
 import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 export default function Navbar() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
     <>
-        <div style={{marginLeft: "10%", marginRight: "10%", marginTop: "5%"}}>
-            <div style={{
-                backgroundColor: "rgba(255, 255, 255, 0.36)",
-                fontFamily: 'Poppins',
-                alignItems: "center",
-                justifyContent: "space-around",
-                display: "flex",
-                height: "60px",
-                alignContent: "center",
-                borderRadius: "10px",
-            }}>
-                <img src={logo} style={{
-                    width: "8%",
-                    height: "auto",
-                }} />
-                <nav style={{display: "flex", gap: "20px"}}>
-                    <Link to="/" style={{textDecoration: "none", color: "white"}}>
-                        Home
-                    </Link>
-                    <Link to="/projects" style={{textDecoration: "none", color: "white"}}>
-                        Projects
-                    </Link>
-                    <Link to="/skills" style={{textDecoration: "none", color: "white"}}>
-                        My Skills
-                    </Link>
-                    <Link to="/experience" style={{textDecoration: "none", color: "white"}}>
-                        Experience
-                    </Link>
+        <div className="navbar-container">
+            <div className="navbar">
+                <img src={logo} className="navbar-logo" alt="Logo" />
+                
+                {/* Desktop Navigation */}
+                <nav className="desktop-nav">
+                    <Link to="/" className="nav-link">Home</Link>
+                    <Link to="/projects" className="nav-link">Projects</Link>
+                    <Link to="/skills" className="nav-link">Skills</Link>
+                    <Link to="/experience" className="nav-link">Experience</Link>
                 </nav>
-                <a href="https://www.linkedin.com/in/marielaquintanar13b41248/">
-                    <button id="hire" style={{
-                        background: "linear-gradient(90deg, #7C02F5, #B517F5)",
-                        left: "auto",
-                        color: "#ffffff",
-                        fontFamily: "'Poppins', sans-serif",
-                        fontSize: "14px",
-                        border: "none",
-                        borderRadius: "15px",
-                        justifyContent: "space-around",
-                        width: "150%",
-                        padding: "1%",
-                        cursor: "pointer"
-                    }}>Hire me</button>
+
+                {/* Desktop Hire Button */}
+                <a href="https://www.linkedin.com/in/marielaquintanar13b41248/" className="desktop-hire-button">
+                    <button className="hire-button">Hire me</button>
                 </a>
+
+                {/* Mobile Menu Button */}
+                <button className="mobile-menu-button" onClick={toggleMobileMenu}>
+                    <div className="hamburger-line"></div>
+                    <div className="hamburger-line"></div>
+                    <div className="hamburger-line"></div>
+                </button>
+
+                {/* Mobile Navigation */}
+                <div className={`mobile-nav ${isMobileMenuOpen ? 'mobile-nav-open' : ''}`}>
+                    <Link to="/" className="mobile-nav-link" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
+                    <Link to="/projects" className="mobile-nav-link" onClick={() => setIsMobileMenuOpen(false)}>Projects</Link>
+                    <Link to="/skills" className="mobile-nav-link" onClick={() => setIsMobileMenuOpen(false)}>My Skills</Link>
+                    <Link to="/experience" className="mobile-nav-link" onClick={() => setIsMobileMenuOpen(false)}>Experience</Link>
+                    <a href="https://www.linkedin.com/in/marielaquintanar13b41248/" className="mobile-hire-link" onClick={() => setIsMobileMenuOpen(false)}>
+                        <button className="mobile-hire-button">Hire me</button>
+                    </a>
+                </div>
             </div>
         </div>
     </>

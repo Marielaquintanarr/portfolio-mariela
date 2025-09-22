@@ -1,9 +1,9 @@
 import './App.css'
-import Navbar from './components/navbar';
-import HomePage from './pages/homepage';
-import Projects from './pages/projects';
-import Skills from './pages/skills';
-import Experience from './pages/experience';
+import Navbar from "./components/navbar";
+import HomePage from "./pages/homepage";
+import Projects from './pages/ProjectsPage';
+import Skills from './pages/SkillsPage';
+import Experience from './pages/ExperiencePage';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 export default function App() {
