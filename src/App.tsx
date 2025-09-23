@@ -1,6 +1,6 @@
 import './App.css'
-import Navbar from "./components/navbar";
-import HomePage from "./pages/homepage";
+import Navbar from "./components/Navbar";
+import HomePage from "./pages/Homepage";
 import Projects from './pages/ProjectsPage';
 import Skills from './pages/SkillsPage';
 import Experience from './pages/ExperiencePage';
