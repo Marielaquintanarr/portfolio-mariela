@@ -1,4 +1,4 @@
-import SkillCard from "../components/SkillCard";
+import SkillCard from "../components/skillCard";
 import Header from "../components/TitleHeader";
 export default function SkillsPage() {
     return (
