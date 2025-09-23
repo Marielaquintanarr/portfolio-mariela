@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function CustomTabs() {
+function ExperienceTabs() {
   const [activeTab, setActiveTab] = useState("first");
 
   const tabs = [
@@ -116,4 +116,4 @@ function CustomTabs() {
   );
 }
 
-export default CustomTabs;
+export default ExperienceTabs;

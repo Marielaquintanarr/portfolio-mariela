@@ -2,7 +2,7 @@ import email from "../assets/email_logo.png";
 import linkedin from "../assets/linkedin_logo.png";
 import github from "../assets/github_logo.png";
 
-export default function Socials() {
+export default function SocialBar() {
     return(
         <>
             <div className="socials-desktop">

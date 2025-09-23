@@ -5,7 +5,7 @@ import hangman from "../assets/hangman_logo.jpg";
 import drink from "../assets/truth_or_drink_logo.png";
 import Card from '../components/ProjectCard';
 import Header from '../components/TitleHeader';
-export default function Projects() {
+export default function ProjectsPage() {
     return (
         <>
             <div className="projects-container">

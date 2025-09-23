@@ -4,7 +4,7 @@ import Socials from "../components/SocialBar";
 import '../App.css';
 import { Link } from "react-router-dom";
 
-export default function HomePage() {
+export default function Homepage() {
     return(
         <>
             <div className="homepage-container">

@@ -4,7 +4,7 @@ interface HeaderProps {
     title: string;
 }
 
-export default function Header({ title }: HeaderProps) {
+export default function TitleHeader({ title }: HeaderProps) {
     return (
       <>
         <div className="header-container">

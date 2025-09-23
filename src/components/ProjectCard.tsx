@@ -6,7 +6,7 @@ interface CardProps {
     link: string;
 }
 
-export default function Card({ image, title, text, link }: CardProps) {
+export default function ProjectCard({ image, title, text, link }: CardProps) {
     return(
         <>
         <div className="card">

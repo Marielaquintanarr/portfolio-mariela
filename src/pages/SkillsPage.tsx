@@ -1,6 +1,6 @@
 import SkillCard from "../components/SkillCard";
 import Header from "../components/TitleHeader";
-export default function Skills() {
+export default function SkillsPage() {
     return (
         <>
             <div className="skills-container">
