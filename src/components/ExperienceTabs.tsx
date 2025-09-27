@@ -66,15 +66,15 @@ function ExperienceTabs() {
         {activeTab === "first" && (
           <div>
             <div style={{ display: "flex", gap: "8px", marginBottom: "4px", }}>
-              <h1 style={{ margin: 0 }}>Engineer</h1>
-              <h1 style={{ margin: 0, color: "#B517F5" }}>@ Datadog</h1>
+              <h1 className="title-experience" style={{ margin: 0 }}>Engineer</h1>
+              <h1 className="company-experience"  style={{ margin: 0, color: "#B517F5" }}>@ Datadog</h1>
             </div>
             <p style={{ marginTop: 0, marginBottom: "12px",}}>
               June 2025 - August 2025
             </p>
             <ul style={{ marginTop: 0,listStyleType: "disc"}}>
-              <li style={{ marginBottom: "10px", fontFamily: "'Poppins', sans-serif"}}>Designed a unified query view in Database Monitoring to quickly identify critical queries across hosts.</li>
-              <li style={{ marginBottom: "10px", fontFamily: "'Poppins', sans-serif"}}>Enhanced team efficiency by exposing key metrics (e.g., execution count, duration, plan flips) through scalable filtering, improving prioritization and performance analysis.</li>
+              <li className="bullet-experience" style={{ marginBottom: "10px", fontFamily: "'Poppins', sans-serif"}}>Designed a unified query view in Database Monitoring to quickly identify critical queries across hosts.</li>
+              <li className="bullet-experience" style={{ marginBottom: "10px", fontFamily: "'Poppins', sans-serif"}}>Enhanced team efficiency by exposing key metrics (e.g., execution count, duration, plan flips) through scalable filtering, improving prioritization and performance analysis.</li>
             </ul>
           </div>
         )}
