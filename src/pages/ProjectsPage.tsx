@@ -12,9 +12,9 @@ export default function ProjectsPage() {
                 <Header title="Projects" />
                 <div className="projects-grid">
                     <Card image={drink} title="Truth or Drink" text="Built with Javascript" link="https://github.com/Marielaquintanarr/TruthOrDrink" />
-                    <Card image={snake} title="Snake Game" text="Built with Python" link="kmckmdlcm" />
-                    <Card image={car} title="Race Game" text="Built with Python" link="kmckmdlcm" />
-                    <Card image={hangman} title="Hangman" text="Built with Python" link="https://github.com/Marielaquintanarr/TruthOrDrink" />
+                    <Card image={snake} title="Snake Game" text="Built with Python" link="https://github.com/Marielaquintanar/snake_game" />
+                    <Card image={car} title="Race Game" text="Built with Python" link="https://github.com/Marielaquintanar/car_race_game" />
+                    <Card image={hangman} title="Hangman" text="Built with Python" link="https://github.com/Marielaquintanar/hangman_game" />
                 </div>
             </div>
         </>

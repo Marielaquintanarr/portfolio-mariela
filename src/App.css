@@ -37,7 +37,7 @@ body {
     }
 }
 
-#email, #linkedin, #github {
+#email, #linkedin, #github, #cv {
     background-color: #858587;
     border: none;
     border-radius: 50%;
@@ -50,7 +50,7 @@ body {
     transition: all 0.3s ease;
 }
 
-#linkedin img, #github img {
+#linkedin img, #github img, #cv img {
     width: 70%;
 }
 
@@ -58,7 +58,7 @@ body {
     width: 100%;
 }
 
-#email:hover, #linkedin:hover, #github:hover {
+#email:hover, #linkedin:hover, #github:hover, #cv:hover {
     background-color: #ffffff;
     border: none;
     border-radius: 50%;

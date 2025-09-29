@@ -1,6 +1,8 @@
 import email from "../assets/email_logo.png";
 import linkedin from "../assets/linkedin_logo.png";
 import github from "../assets/github_logo.png";
+import cv from "../assets/CV.png";
+import pdf from "../assets/CV_Mariela_Quintanar_De_La_Mora.pdf";
 
 export default function SocialBar() {
     return(
@@ -21,6 +23,16 @@ export default function SocialBar() {
                         <img src={github} alt="GitHub" />
                     </button>
                 </a>
+                <button id="cv"
+                    onClick={() => {
+                        const link = document.createElement("a");
+                        link.href = pdf;
+                        link.download = "CV_Mariela_Quintanar_De_La_Mora.pdf";
+                        link.click();
+                    }}
+                    >
+                    <img src={cv} alt="Download CV" />
+                </button>
             </div>
             <div className="socials-mobile">
                 <a href="https://mail.google.com/mail/u/0/?pli=1#inbox">
@@ -38,6 +50,16 @@ export default function SocialBar() {
                         <img src={github} alt="GitHub" />
                     </button>
                 </a>
+                <button id="cv"
+                    onClick={() => {
+                        const link = document.createElement("a");
+                        link.href = pdf;
+                        link.download = "CV_Mariela_Quintanar_De_La_Mora.pdf";
+                        link.click();
+                    }}
+                    >
+                    <img src={cv} alt="Download CV" />
+                </button>
             </div> 
         </>
     )

@@ -72,6 +72,9 @@ function ExperienceTabs() {
             <p style={{ marginTop: 0, marginBottom: "12px",}}>
               June 2025 - August 2025
             </p>
+            <p style={{ marginTop: 0, marginBottom: "12px", color: "#B517F5" }}>
+                New York, USA
+                </p>
             <ul style={{ marginTop: 0,listStyleType: "disc"}}>
               <li className="bullet-experience" style={{ marginBottom: "10px", fontFamily: "'Poppins', sans-serif"}}>Designed a unified query view in Database Monitoring to quickly identify critical queries across hosts.</li>
               <li className="bullet-experience" style={{ marginBottom: "10px", fontFamily: "'Poppins', sans-serif"}}>Enhanced team efficiency by exposing key metrics (e.g., execution count, duration, plan flips) through scalable filtering, improving prioritization and performance analysis.</li>
@@ -87,6 +90,9 @@ function ExperienceTabs() {
                 </div>
                 <p style={{ marginTop: 0, marginBottom: "12px" }}>
                 June 2024 - March 2025
+                </p>
+                <p style={{ marginTop: 0, marginBottom: "12px", color: "#B517F5" }}>
+                Jalisco, Mexico
                 </p>
                 <ul style={{ marginTop: 0,listStyleType: "disc"}}>
                 <li className="bullet-experience" style={{ marginBottom: "10px", fontFamily: "'Poppins', sans-serif"}}>Developed an Oracle tools application, reducing search time by 80%. Previously, engineers navigated multiple pages,
@@ -104,6 +110,9 @@ function ExperienceTabs() {
                 </div>
                 <p style={{ marginTop: 0, marginBottom: "12px" }}>
                 February 2023 - January 2024
+                </p>
+                <p style={{ marginTop: 0, marginBottom: "12px", color: "#B517F5" }}>
+                Jalisco, Mexico
                 </p>
                 <ul style={{ marginTop: 0,listStyleType: "disc"}}>
                 <li className="bullet-experience" style={{ marginBottom: "10px", fontFamily: "'Poppins', sans-serif"}}>Developed administrative Oracle APEX pages for small businesses, streamlining daily operations and improving efficiency.</li>
